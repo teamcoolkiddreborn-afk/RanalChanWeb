@@ -1,18 +1,17 @@
 <!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#11131f" />
-    <meta name="description" content="RanalChan — annonces, applications et partenaires." />
+<html lang="fr" style="--background-image: url(&quot;../image/Hivers/Capture%20d'%C3%A9cran%202026-11-13%20140621%20(2).png&quot;);"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#11131f">
+    <meta name="description" content="RanalChan — annonces, applications et partenaires.">
     <title>RanalChan — Hub officiel</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="loader" id="loader" aria-label="Chargement">
+  <body data-theme="Hivers">
+    <div class="loader hide" id="loader" aria-label="Chargement">
       <div class="loader-mark">R</div>
       <span>Chargement de RanalChan<span class="dots">...</span></span>
     </div>
@@ -39,7 +38,7 @@
       <section class="hero section-shell">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> L'univers RanalChan</p>
-          <h1>Bienvenue dans<br /><em>notre monde.</em></h1>
+          <h1>Bienvenue dans<br><em>notre monde.</em></h1>
           <p class="hero-text">Retrouve ici toutes les nouveautés, applications et projets qui font vivre la communauté RanalChan.</p>
           <div class="hero-actions">
             <button class="primary-button" data-section-target="applications">Découvrir les applications <span>↗</span></button>
@@ -48,28 +47,29 @@
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="orb orb-one"></div><div class="orb orb-two"></div>
-          <div class="mascot-frame"><img id="hero-mascot" alt="" /><div class="mascot-glow"></div></div>
-          <div class="season-badge"><span class="season-icon">✦</span><span><small>Thème actuel</small><strong id="season-label">Normal</strong></span></div>
+          <div class="mascot-frame"><img id="hero-mascot" alt="" src="../image/Hivers/file_00000000c230820a979f30e8c6664499.png"><div class="mascot-glow"></div></div>
+          <div class="season-badge"><span class="season-icon">✦</span><span><small>Thème actuel</small><strong id="season-label">Hiver</strong></span></div>
         </div>
       </section>
 
       <section class="news section-shell" aria-labelledby="news-title">
-        <div class="section-heading"><div><p class="eyebrow">À la une</p><h2 id="news-title">Dernières annonces</h2></div><span class="heading-line"></span><span class="news-count" id="news-count"></span></div>
-        <div class="news-grid" id="news-list"></div>
+        <div class="section-heading"><div><p class="eyebrow">À la une</p><h2 id="news-title">Dernières annonces</h2></div><span class="heading-line"></span><span class="news-count" id="news-count">2 PUBLICATIONS</span></div>
+        <div class="news-grid" id="news-list"><article class="news-card"><div class="card-meta"><span>DERNIÈRE UPDATE</span><span class="tag">AGARTHAKIT</span></div><h3>Syscall implémenté</h3><p>La dernière mise à jour d’AGARTHAKIT intègre désormais syscall. Découvre les changements sur GitHub.</p><span class="card-arrow">↗</span></article><article class="news-card"><div class="card-meta"><span>À VÉRIFIER</span><span class="tag">Important</span></div><h3>Les conditions d’utilisation ont changé</h3><p>Les Terms of Use ont été modifiés. Pense à les relire avant d’utiliser les projets concernés.</p><span class="card-arrow">↗</span></article></div>
       </section>
     </main>
 
-    <section id="applications" class="content-section section-shell" hidden>
+    <section id="applications" class="content-section section-shell" hidden="">
       <div class="page-intro"><p class="eyebrow">Les projets RanalChan</p><h2>Applications</h2><p>Les outils et créations développés pour rendre la communauté encore plus agréable.</p></div>
-      <div class="card-grid" id="applications-list"></div>
+      <div class="card-grid" id="applications-list"><a class="info-card" href="https://github.com/teamcoolkiddreborn-afk/AGARTHAKIT" target="_blank" rel="noopener"><div class="info-icon">✦</div><h3>AGARTHAKIT <span class="card-arrow">↗</span></h3><p>La boîte à outils de la Team CoolKidd Reborn, disponible sur GitHub.</p></a><article class="info-card"><div class="info-icon">⌘</div><h3>Tes projets</h3><p>Cet espace est prévu pour présenter simplement les applications et créations de la communauté.</p></article><article class="info-card"><div class="info-icon">↗</div><h3>Proposer une idée</h3><p>Une idée ou un projet à partager ? Rejoins la communauté pour en discuter.</p></article></div>
     </section>
 
-    <section id="partenaires" class="content-section section-shell" hidden>
+    <section id="partenaires" class="content-section section-shell" hidden="">
       <div class="page-intro"><p class="eyebrow">La communauté autour de nous</p><h2>Partenaires</h2><p>Les endroits où retrouver RanalChan, ses projets et ses créateurs.</p></div>
-      <div class="card-grid" id="partners-list"></div>
+      <div class="card-grid" id="partners-list"><a class="info-card" href="https://discord.gg/Vybc8EsdE2" target="_blank" rel="noopener"><div class="info-icon">◉</div><h3>Discord <span class="card-arrow">↗</span></h3><p>Le point de rencontre de la communauté RanalChan.</p></a><a class="info-card" href="https://www.youtube.com/@ck4TeamC00lkiddreborn" target="_blank" rel="noopener"><div class="info-icon">▶</div><h3>YouTube <span class="card-arrow">↗</span></h3><p>Retrouve les vidéos, lives et contenus de RanalChan.</p></a><a class="info-card" href="https://github.com/teamcoolkiddreborn-afk" target="_blank" rel="noopener"><div class="info-icon">⌘</div><h3>GitHub <span class="card-arrow">↗</span></h3><p>Les projets et codes open source de RanalChan.</p></a></div>
     </section>
 
-    <footer class="site-footer section-shell"><span>© <span id="year"></span> RanalChan</span><span>Fait avec <span class="heart">♥</span> pour la communauté</span></footer>
+    <footer class="site-footer section-shell"><span>© <span id="year">2026</span> RanalChan</span><span>Fait avec <span class="heart">♥</span> pour la communauté</span></footer>
     <script src="script.js"></script>
-  </body>
-</html>
+  
+
+</body></html>
