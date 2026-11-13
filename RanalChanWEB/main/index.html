@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#11131f" />
+    <meta name="description" content="RanalChan — annonces, applications et partenaires." />
+    <title>RanalChan — Hub officiel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-label="Chargement">
+      <div class="loader-mark">R</div>
+      <span>Chargement de RanalChan<span class="dots">...</span></span>
+    </div>
+
+    <div class="backdrop" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="RanalChan accueil">
+        <span class="brand-icon">R</span>
+        <span>Ranal<span>Chan</span></span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav-link active" data-section="accueil">Accueil</button>
+        <button class="nav-link" data-section="applications">Applications</button>
+        <button class="nav-link" data-section="partenaires">Partenaires</button>
+      </nav>
+      <label class="theme-picker" for="theme-select"><span>Thème</span><select id="theme-select" aria-label="Choisir un thème"><option value="Normal">Normal</option><option value="Hivers">Hiver</option><option value="Halloween">Halloween</option></select></label>
+      <a class="header-action" href="#partenaires">Nous rejoindre <span>↗</span></a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+    </header>
+
+    <main id="accueil">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> L'univers RanalChan</p>
+          <h1>Bienvenue dans<br /><em>notre monde.</em></h1>
+          <p class="hero-text">Retrouve ici toutes les nouveautés, applications et projets qui font vivre la communauté RanalChan.</p>
+          <div class="hero-actions">
+            <button class="primary-button" data-section-target="applications">Découvrir les applications <span>↗</span></button>
+            <button class="text-button" data-section-target="partenaires">Voir les partenaires <span>→</span></button>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="mascot-frame"><img id="hero-mascot" alt="" /><div class="mascot-glow"></div></div>
+          <div class="season-badge"><span class="season-icon">✦</span><span><small>Thème actuel</small><strong id="season-label">Normal</strong></span></div>
+        </div>
+      </section>
+
+      <section class="news section-shell" aria-labelledby="news-title">
+        <div class="section-heading"><div><p class="eyebrow">À la une</p><h2 id="news-title">Dernières annonces</h2></div><span class="heading-line"></span><span class="news-count" id="news-count"></span></div>
+        <div class="news-grid" id="news-list"></div>
+      </section>
+    </main>
+
+    <section id="applications" class="content-section section-shell" hidden>
+      <div class="page-intro"><p class="eyebrow">Les projets RanalChan</p><h2>Applications</h2><p>Les outils et créations développés pour rendre la communauté encore plus agréable.</p></div>
+      <div class="card-grid" id="applications-list"></div>
+    </section>
+
+    <section id="partenaires" class="content-section section-shell" hidden>
+      <div class="page-intro"><p class="eyebrow">La communauté autour de nous</p><h2>Partenaires</h2><p>Les endroits où retrouver RanalChan, ses projets et ses créateurs.</p></div>
+      <div class="card-grid" id="partners-list"></div>
+    </section>
+
+    <footer class="site-footer section-shell"><span>© <span id="year"></span> RanalChan</span><span>Fait avec <span class="heart">♥</span> pour la communauté</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
